@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+    each thing, i in sample
+        li= 'Counter ' + i
+        li= 'Value of a '+ thing.a
+        li= 'ID ' + thing._id
